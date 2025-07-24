@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Background Generator</h1>
+    
+    <div class="controls">
+      <input type="color" id="color1" value="#ff0000">
+      <input type="color" id="color2" value="#0000ff">
+      
+      <select id="direction">
+        <option value="to right">→ Right</option>
+        <option value="to left">← Left</option>
+        <option value="to top">↑ Top</option>
+        <option value="to bottom">↓ Bottom</option>
+        <option value="to top right">↗ Top Right</option>
+        <option value="to bottom left">↙ Bottom Left</option>
+      </select>
+    </div>
+
+    <div id="preview"></div>
+    
+    <div class="code">
+      <code id="css-code">background: linear-gradient(to right, #ff0000, #0000ff);</code>
+      <button onclick="copyCode()">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
